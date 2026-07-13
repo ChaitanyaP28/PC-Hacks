@@ -11,3 +11,5 @@
 `*#*#225#*#*` : Calendar Information
 
 `*#*#426#*#*` : Google Play Services diagnostics
+
+`*#*#6485#*#*` : Battery Health
