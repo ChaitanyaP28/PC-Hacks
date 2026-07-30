@@ -32,7 +32,7 @@ sudo mergerfs /mnt/disk1:/mnt/disk2:/mnt/disk3 /mnt/jbod \
 
 ### Check Status
 ```bash
-mount |grep "mergerfs"
+mount | grep "mergerfs"
 ```
 
 ### Service
