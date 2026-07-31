@@ -21,13 +21,19 @@ alias gs='git status'
 alias gb='git branch'
 ```
 
-Add the following in `~/.bashrc`
+Add in `~/.bashrc`
 
 ```bash
 nano ~/.bashrc
 ```
 
-View Environment Variables
+Finally source bashrc
+
+```bash
+source ~/.bashrc
+```
+
+## View Environment Variables
 
 ```bash
 printenv
@@ -37,11 +43,6 @@ or
 
 ```bash
 env
-```
-Finally source bashrc
-
-```bash
-source ~/.bashrc
 ```
 
 ## Open Google Chrome with webpage from terminal
