@@ -174,3 +174,54 @@ sudo /usr/local/bin/k3s-uninstall.sh
 sudo /usr/local/bin/k3s-agent-uninstall.sh
 ```
 
+## NAS
+### Setup
+Installing Samba Server
+```bash
+sudo apt install samba
+```
+
+Open Samba Config File
+```bash
+sudo nano /etc/samba/smb.conf
+```
+
+```text
+[PI-NAS]
+path = <Path to your shared folder>
+writeable = yes
+browseable = yes
+public=no
+```
+
+- PI-NAS : Name of the NAS folder
+- path : Path to your shared folder
+- writeable : Write access
+- browseable : Visiable on explorer
+- public : If Guest Users (Without Signin) Can access
+
+```bash
+sudo systemctl restart smbd
+```
+
+### Samba User
+```bash
+sudo smbpasswd -a <Username>
+```
+
+
+### Accessing
+
+**On Windows:**
+
+(File Manager)
+```bash
+\\raspberrypi.local
+```
+
+**On Linux:**
+
+(Nautilus File Manager >  Other Locations > Enter server address)
+```bash
+smb://raspberrypi.local
+```
