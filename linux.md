@@ -167,3 +167,18 @@ pkill -t pts/0
 
 **⚠️ Warning:** Running `pkill -t tty2` on a desktop system will terminate the graphical session and log out the user.
 
+
+## Open Window of Linux in Windows
+```bash
+nautilus . 
+```
+
+For SSH:
+```bash
+ssh -X
+```
+** It is important to run ssh with -X
+** It Doesn't work on windows Terminal, Use WSL and then do -X to open window.
+
+
+
