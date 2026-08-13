@@ -180,5 +180,10 @@ ssh -X
 ** It is important to run ssh with -X
 ** It Doesn't work on windows Terminal, Use WSL and then do -X to open window.
 
+## Number of CPU Threads
+```bash
+nproc
+```
+
 
 
