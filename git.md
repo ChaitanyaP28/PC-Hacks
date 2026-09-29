@@ -97,4 +97,7 @@ git push --force-with-lease origin main
 **Caution:** This wont give any commit points on GitHub.
 
 
-
+## Git Don't ask login everytime to push
+```bash
+git config --global credential.helper store
+```
